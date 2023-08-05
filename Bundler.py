@@ -56,5 +56,5 @@ class Bundler:
         return file_content
 
     def _read_file(self, filepath: str) -> str:
-        with open(filepath, "r") as f:
+        with open(filepath, "r", encoding="utf-8") as f:
             return f.read()
