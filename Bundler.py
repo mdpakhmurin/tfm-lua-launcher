@@ -48,6 +48,10 @@ class Bundler:
             full_file_path = os.path.join(dir_path, dofile_path)
             replacement_text = self._process_file(full_file_path)
 
+            # re.sub escaping backslashes. Therefore increasing the number of slashes
+            # TODO: find a better solution
+            replacement_text = replacement_text.replace("\\", "\\\\")
+
             file_content = re.sub(
                 replace_pattern.format(quote_char=quote_char, file_path=dofile_path),
                 replacement_text,
