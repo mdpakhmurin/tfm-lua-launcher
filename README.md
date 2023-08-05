@@ -10,5 +10,6 @@ This project significantly simplifies the process of creating and launching modu
 
 ## ⌨ Usage
 1. You need to download this project.
-2. Run the project: Python TFM-LUANCHER.py path/to/lua/directory (the entry point file is the main.lua file)
-3. Use the lua command dofile('path/to/file') to attach additional files to the assembly. Remember that all elements are global
+2. Run trasnformice.
+3. Run the project: Python TFM-LUANCHER.py path/to/lua/directory (the entry point file is the main.lua file).
+4. Use the lua command dofile('path/to/file') to attach additional files to the assembly. Remember that all elements are global.
