@@ -6,7 +6,7 @@ from Launchers import WindowsLauncher
 
 class RunHandler:
     def handle(self, args: List[str]) -> bool:
-        if len(args) <= 2:
+        if len(args) < 2:
             return False
 
         path_to_dir = "./"

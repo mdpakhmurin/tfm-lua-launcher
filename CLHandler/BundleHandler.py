@@ -7,7 +7,7 @@ from Bundlers import BundlerV1
 
 class BundleHandler:
     def handle(self, args: List[str]) -> bool:
-        if len(args) <= 2:
+        if len(args) < 2:
             return False
 
         path_to_dir = "./"
