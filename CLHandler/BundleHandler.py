@@ -18,7 +18,9 @@ class BundleHandler:
             bundler = BundlerV1()
 
             bundle = bundler.bundle(path_to_dir)
-            with open(os.path.join(path_to_dir, "bundle.txt"), "w+") as f:
+            with open(
+                os.path.join(path_to_dir, "bundle.txt"), "w+", encoding="utf-8"
+            ) as f:
                 f.write(bundle.get_source())
 
             return True
