@@ -2,10 +2,10 @@ import re
 import os
 
 from Protocols import IBundle
-from Bundle import Bundle
+from Bundlers import Bundle
 
 
-class Bundler:
+class BundlerV1:
     def bundle(self, dir_path: str) -> IBundle:
         main_file_path = os.path.join(dir_path, "main.lua")
         if not os.path.isfile(main_file_path):

@@ -1,8 +1,11 @@
-from BaseHandlersChain import BaseHandlersChain
-from BundleHandler import BundleHandler
-from WrongHandler import WrongHandler
-from RunHandler import RunHandler
-from HelpHandler import HelpHandler
+from CLHandler import (
+    BaseHandlersChain,
+    BundleHandler,
+    WrongHandler,
+    RunHandler,
+    HelpHandler,
+    WrongHandler,
+)
 
 
 class DefaultHandlersChain(BaseHandlersChain):

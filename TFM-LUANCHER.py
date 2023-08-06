@@ -1,7 +1,7 @@
 from colorama import Fore
 import sys
 
-from DefaultHandlersChain import DefaultHandlersChain
+from CLHandler import DefaultHandlersChain
 
 
 def process_command_line(args):

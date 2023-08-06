@@ -1,10 +1,11 @@
 from typing import List
 
-from Bundler import Bundler
-from Launcher import WindowsLauncher
+import os
+
+from Bundlers import BundlerV1
 
 
-class RunHandler:
+class BundleHandler:
     def handle(self, args: List[str]) -> bool:
         if len(args) <= 2:
             return False
@@ -13,12 +14,13 @@ class RunHandler:
         if len(args) > 2:
             path_to_dir = args[2]
 
-        if args[1] == "run":
-            bundler = Bundler()
-            launcher = WindowsLauncher()
+        if args[1] == "bundle":
+            bundler = BundlerV1()
 
             bundle = bundler.bundle(path_to_dir)
-            launcher.launch(bundle)
+            with open(os.path.join(path_to_dir, "bundle.txt"), "w+") as f:
+                f.write(bundle.get_source())
+
             return True
 
         return False
