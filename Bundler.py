@@ -1,8 +1,8 @@
-from Protocols.IBundle import IBundle
-from Bundle import Bundle
-
 import re
 import os
+
+from Protocols.IBundle import IBundle
+from Bundle import Bundle
 
 
 class Bundler:
