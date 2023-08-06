@@ -1,11 +1,11 @@
 from colorama import Fore
 import sys
 
-from DefaultHandlerChain import DefaultHandlerChain
+from DefaultHandlersChain import DefaultHandlersChain
 
 
 def process_command_line(args):
-    DefaultHandlerChain().handle(args)
+    DefaultHandlersChain().handle(args)
 
 
 if __name__ == "__main__":

@@ -1,9 +1,9 @@
 from typing import List
 
-from Protocols.ICommandLineHandler import ICommandLineHandler
+from Protocols import ICommandLineHandler
 
 
-class BaseHandlerChain:
+class BaseHandlersChain:
     def __init__(self) -> None:
         self.handlers: List[ICommandLineHandler] = []
 

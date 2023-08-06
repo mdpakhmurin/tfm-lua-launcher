@@ -1,5 +1,6 @@
 from typing import Protocol
-from IBundle import IBundle
+from Protocols import IBundle
+
 
 class ILauncher(Protocol):
     def launch(self, bundle: IBundle):
